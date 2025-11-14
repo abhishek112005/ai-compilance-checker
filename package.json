@@ -1,0 +1,62 @@
+{
+  "name": "@compliance-checker/react",
+  "version": "1.0.0",
+  "description": "AI-powered product compliance checker React component library using Gemini Vision API",
+  "exports": {
+    ".": {
+      "import": "./dist/index.esm.js",
+      "require": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    },
+    "./styles": "./dist/styles.css"
+  },
+  "main": "dist/index.js",
+  "module": "dist/index.esm.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist",
+    "src"
+  ],
+  "scripts": {
+    "build": "rollup -c",
+    "build:next": "next build",
+    "dev": "next dev",
+    "lint": "eslint src",
+    "type-check": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@babel/core": "latest",
+    "@google/generative-ai": "latest",
+    "@rollup/plugin-babel": "latest",
+    "@tailwindcss/postcss": "^4.1.17",
+    "@types/babel__core": "latest",
+    "@vercel/analytics": "latest",
+    "class-variance-authority": "^0.7.1",
+    "clsx": "^2.1.1",
+    "lucide-react": "^0.454.0",
+    "recharts": "latest",
+    "tailwind-merge": "^2.5.5",
+    "tailwindcss-animate": "^1.0.7",
+    "tw-animate-css": "latest"
+  },
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "^26.0.0",
+    "@rollup/plugin-node-resolve": "^15.0.0",
+    "@rollup/plugin-typescript": "^11.0.0",
+    "@types/node": "^22",
+    "@types/react": "19.2.4",
+    "@types/react-dom": "19.2.3",
+    "next": "16.0.3",
+    "postcss": "^8.5",
+    "react": "19.2.0",
+    "react-dom": "19.2.0",
+    "rollup": "^4.0.0",
+    "rollup-plugin-postcss": "^4.0.0",
+    "tailwindcss": "^4.1.9",
+    "typescript": "^5"
+  },
+  "peerDependencies": {
+    "react": "^18.0.0 || ^19.0.0",
+    "react-dom": "^18.0.0 || ^19.0.0"
+  }
+}
